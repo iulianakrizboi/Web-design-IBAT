@@ -1,0 +1,38 @@
+body {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: -20%;
+    padding-bottom: -20%;
+    border-style: outset;
+    text-align: justify;
+    background-color: purple;
+ }
+
+h1 {
+    font-size: 84px;
+    margin-bottom: 64px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-display: swap;
+    letter-spacing: 1px;
+    color: white;
+}
+
+h2 {
+    font-size: 28px;
+    font-family: fantasy;
+    font-weight: 500;
+    margin-bottom: 4px;
+    margin-top: 54px;
+    text-transform: uppercase;
+    color: white;
+}
+
+p {
+    font-size: 20px;
+    margin-top: 10px;
+    font-family: sans-serif;
+    line-height: 1.44;
+    color: white;
+}
