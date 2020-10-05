@@ -17,6 +17,7 @@ h1 {
     line-height: 1.2;    
     margin-top: 30px;
     margin-bottom: 30px;
+    font-family: 'Questrial', sans-serif;
 }
 
 /* Small headings */
@@ -28,6 +29,7 @@ h2 {
     line-height: 1.3;    
     margin-top: 42px;
     margin-bottom: 12px;
+    font-family: 'Questrial', sans-serif;
 }
 
 /* Text paragraphs */
@@ -37,6 +39,7 @@ p {
    color: #455C80;
    line-height: 1.6;
    margin-bottom: 20px;
+   font-family: 'Comfortaa', cursive;
 }
 
 /* Images */
