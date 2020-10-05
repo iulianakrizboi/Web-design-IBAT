@@ -18,6 +18,7 @@ h1 {
     letter-spacing: -2px;
     text-align: center;
     margin-bottom: 32px;
+    font-family: 'Merriweather', serif;
 }
 
 /* Small headings */
@@ -27,6 +28,7 @@ h2 {
     color:#3434B0;
     line-height: 1.4;
     margin-bottom: 4px;
+    font-family: 'Merriweather', serif;
 }
 
 /* Smaller headings */
@@ -37,6 +39,7 @@ h3 {
     letter-spacing:-2px;
     margin-top: 56px;
     margin-bottom: 2px;
+    font-family: 'Merriweather', serif;
 }
 
 /* Text paragraphs */
@@ -47,6 +50,7 @@ p {
     line-height: 1.6;
     margin-top: 0;
     margin-bottom: 22px;
+    font-family: 'Merriweather', serif;
 }
 
 /* Images */
