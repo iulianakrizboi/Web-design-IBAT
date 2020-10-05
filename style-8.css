@@ -11,31 +11,31 @@ body {
 
 /* Main heading */
 h1 {
-	font-family: serif;
-	font-weight: bold;
-	font-size: 54px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    font-size: 50px;
     letter-spacing: -1px;
     text-align: center;
-    margin-top: 42px;
-    margin-bottom: 32px;
+    margin-top: 50px;
+    margin-bottom: 80px;
 }
 
 /* Small headings */
 h2 {
-    font-family: sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     font-weight: bold;
     color: rgb(91,86,154);    
-    font-size: 32px;
+    font-size: 35px;
     text-align:center;
-    margin-top: 0;
-    margin-bottom: 42px;
+    margin-top: 20px;
+    margin-bottom: 70px;
 }
 
 /* Smaller headings */
 h3 {
-	font-family: serif;
+    font-family: 'Josefin Sans', sans-serif;
     font-weight: bold;
-    font-size: 48px;
+    font-size: 35px;
     color: rgb(91,86,154);
     margin-top: 32px;
     margin-bottom:4px;
@@ -43,7 +43,7 @@ h3 {
 
 /* Text paragraphs */
 p {
-   font-family: sans-serif;
+   font-family: 'Lato', sans-serif;
    font-weight: normal;
    font-size: 22px;
    line-height: 1.6;
