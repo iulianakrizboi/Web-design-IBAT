@@ -9,7 +9,7 @@ img { width: 100%; height: auto; display: block; }
 @media (min-width:768px) { .container-block { padding: 1% 1.8% 2% 1% } }
 
 /* Mobiles */
-@media (max-width:767px) { .container-block { padding: 2% 5% 2% 8% } }
+@media (max-width:767px) { .container-block { padding: 2% 1% 2% 1% } }
 
 
 /* ========== FLEXBOX PARENT AND CHILD COLUMN ELEMENTS ========= */
@@ -44,7 +44,7 @@ img { width: 100%; height: auto; display: block; }
 
 /* Mobiles: inner padding for child columns  */
 @media (max-width: 767px) {
-    [class*="item-col-"].item-col-padding { padding: 6.5% 7% 7% 7% }
+    [class*="item-col-"].item-col-padding { padding: 3% 4% 4% 4% }
 }
 
 
