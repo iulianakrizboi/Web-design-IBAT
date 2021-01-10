@@ -129,7 +129,7 @@ img { width: 100%; height: auto; display: block; }
     /* Vertical spacing of block content */
     justify-content: center;
     /* Background color */
-      background-image: url('../../img/cameras.jpg'); 
+      background-image: url("cameras.jpg"); 
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
