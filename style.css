@@ -146,7 +146,7 @@ img { width: 100%; height: auto; display: block; }
 
 /*  Mobiles - heading and sub-heading alignment */
 @media (max-width:767px) {
-    .hero-image h1 { text-align: center }
+    .hero-image h1 { text-align: center; margin-top: -1% }
 }
 
 .hero-image h1 { 
