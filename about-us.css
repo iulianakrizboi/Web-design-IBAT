@@ -6,10 +6,10 @@ img { width: 100%; height: auto; display: block; }
 
 /* ========== MAIN CONTENT CONTAINERS ========= */
 /* Desktops */
-@media (min-width:768px) { .container-block { padding: 4% 8%  } }
+@media (min-width:768px) { .container-block { padding: 1% 1.8% 2% 1% } }
 
 /* Mobiles */
-@media (max-width:767px) { .container-block { padding: 11% 8% } }
+@media (max-width:767px) { .container-block { padding: 2% 5% 2% 8% } }
 
 
 /* ========== FLEXBOX PARENT AND CHILD COLUMN ELEMENTS ========= */
@@ -25,7 +25,7 @@ img { width: 100%; height: auto; display: block; }
 
 /* Desktops: flexbox child columns */
 @media (min-width: 768px) {
-    .item-col-2 { width: 47% }
+    .item-col-2 { width: 39% }
 }
 
 /* Mobiles: flexbox child columns */
@@ -80,8 +80,8 @@ img { width: 100%; height: auto; display: block; }
 
 /* Desktops - heading and sub-heading alignment */
 @media (min-width:768px) {
-    .hero-about-us h1 { text-align: right; margin-right: 55px }
-    .hero-about-us h2 { text-align: right; margin-right: 35px }
+    .hero-about-us h1 { text-align: right; margin-right: 75px }
+    .hero-about-us h2 { text-align: right; margin-right: 55px; padding-bottom: 30px }
 }
 
 /*  Mobiles - heading and sub-heading alignment */
