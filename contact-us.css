@@ -23,7 +23,7 @@ img { width: 100%; height: auto; display: block; }
 	display: flex;
 	flex-direction: column;
     justify-content: center;
-    background-image: url('../../img/black-phones.jpeg');
+    background-image: url("black-phones.jpeg");
 	background-position: center;
 	background-size: cover;
     background-repeat: no-repeat;
