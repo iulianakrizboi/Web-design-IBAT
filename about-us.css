@@ -43,9 +43,9 @@ img { width: 100%; height: auto; display: block; }
 
 /*  Mobiles - heading and sub-heading alignment */
 @media (max-width:767px) {
-    .hero-about-us h1 { text-align: right; margin-right: 55px }
+    .hero-about-us h1 { text-align: right; margin-right: 55px; margin-bottom: 20% }
     .hero-about-us h2 { text-align: right; margin-right: 35px }  
-    .hero-about-us p { margin-top: 30% }
+    .hero-about-us p { margin-top: 30%; margin-bottom: 20% }
 	
 }
 
