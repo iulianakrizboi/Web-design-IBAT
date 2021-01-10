@@ -118,7 +118,7 @@ img { width: 100%; height: auto; display: block; }
 
 /* Mobiles - hero block eight and inside spacing */
  @media (max-width:767px) {
-    .hero-image { height: 980px }
+    .hero-image { height: 1080px }
 }
 
 
