@@ -23,7 +23,7 @@ img { width: 100%; height: auto; display: block; }
 	display: flex;
 	flex-direction: column;
   justify-content: center;
-  background-image: url('C:/Users/iulia/OneDrive/Desktop/Time Flashes/img/leica-copy.jpg');
+  background-image: url('../../img/leica-copy.jpg');
 	text-align: right;
 	background-position: center;
 	background-size: cover;
