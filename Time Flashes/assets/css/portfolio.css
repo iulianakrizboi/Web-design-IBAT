@@ -1,5 +1,5 @@
 /*  ============= WEB BROWSER RESETS ============ */
-* { margin: 0; padding: 0; border: none }
+* { margin: 0; padding: 0; border: none; box-sizing: border-box }
 html { height: 100% }
 body { min-height: 100%; max-width: 1800px; margin-left: auto; margin-right: auto; background-color: rgb(155, 151, 151) }  
 img { width: 100%; height: auto; display: block; }
@@ -464,91 +464,145 @@ a[href^=tel] { text-decoration: none; color: #fff }
 ================END OF MENU STYLES TO COPY AND PASTE ===============
 ****************************************************************** */
 
-/* ========== MAIN CONTENT CONTAINERS ========= */
-/* Desktops */
-@media (min-width:768px) { .container-block { padding: 4% 8% } }
+  
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial;
+  }
+  
+  .row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 10px 4px;
+    margin-top: 5%
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
 
-/* Mobiles */
-@media (max-width:767px) { .container-block { padding: 11% 8%  } }
+  /* == Begin footer CSS == */
 
-
-/* ========== FLEXBOX PARENT AND CHILD COLUMN ELEMENTS ========= */
-
-/* Flexbox parent container */
-.container-flexbox {
-                    display: flex; 
-                    justify-content: space-between; 
-                    flex-wrap: wrap; 
- 
+/* Outer footer parent container */
+.container-footer { 
+	display: flex;
+	justify-content: space-between;
+    flex-wrap: wrap;
+    background-color:#044d6c;
+    font-family: 'Raleway', sans-serif;
 }
 
-/* Desktops: flexbox child columns */
-@media (min-width: 768px) {
-    .item-col-4 { width: 22% }
+/* Desktop footer - inside padding  */
+@media all and (min-width:768px) {
+	.container-footer { padding: 3% 8% 3% 8% }
 }
 
-/* Mobiles: flexbox child columns */
-@media (max-width: 767px) {
-    .item-col-4 { width: 100% }
-    /* Vertical spacing under child columns */
-    .item-col-4 { margin-bottom: 32px }
-    /* No vertical spacing under last child column */
-    .item-col-4:last-child  { margin-bottom: 0 } 
+/* Mobiles footer - inside padding */
+@media all and (max-width:767px) {
+	.container-footer { padding: 12% 8% 1% 8% }
 }
 
-/* Desktops: inner padding for child columns */
-@media (min-width: 768px) {
-    [class*="item-col-"].item-col-padding { padding: 1.8% 2% 2.2% 2% }
+/* Inner footer columns */
+
+/* Desktops - 3 columns */
+@media all and (min-width:768px) { 
+   .container-footer .item-3:nth-child(1) { width: 20% }
+   .container-footer .item-3:nth-child(2) { 
+      width: 50%;
+      /* text-align: center */
+   }
+   .container-footer .item-3:nth-child(3) { 
+      width: 20%;
+   }
 }
 
-/* Mobiles: inner padding for child columns  */
-@media (max-width: 767px) {
-    [class*="item-col-"].item-col-padding { padding: 6.5% 7% 7% 7% }
+/* Mobiles - 1 column */
+@media all and (max-width:767px) { 
+	.container-footer .item-3 { 
+      width: 100%;
+      margin-bottom: 10%
+   }
+   .container-footer .item-3:nth-child(2) { order: 1 }
+   .container-footer .item-3:nth-child(1) { order: 2 }
+   .container-footer .item-3:nth-child(3) { order: 3 } 
 }
 
+/* Styles for footer background, text, icons and links */
 
-/* =========== SUB-HEADINGS AND PARAGRAPHS ============*/
-
-/* Sub-headings inside flexbox child columns */
-.item-col-4 h3 { 
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: calc(24px + (28 - 24) * ((100vw - 320px) / (1600 - 320)));
-    margin-bottom: 4px;
+.container-footer .item-3 h4,
+.container-footer .item-3 p,
+.container-footer .item-3 p i,
+.container-footer .item-3 p a {
+   color: #fff
 }
 
-/* Paragraphs inside flexbox child columns */
-.item-col-4 p { 
-    font-family: 'Roboto', sans-serif;
-    font-size: calc(16px + (19 - 16) * ((100vw - 320px) / (1600 - 320)));
+.container-footer .item-3 h4 {
+   font-weight: bold;
+   /* text-transform: uppercase */
+   margin-bottom: 12px;
+   font-size: calc(17px + (19 - 17) * ((100vw - 320px)/(1600 - 320)));
 }
 
-/* Desktops: paragraph line-spacing and bottom margin */
-@media (min-width: 768px) {
-    .item-col-4 p { line-height: 1.6; margin-bottom: 20px }
+.container-footer .item-3 p {
+   font-weight: normal;
+   margin-bottom: 12px;
+   font-size: calc(15px + (18 - 15) * ((100vw - 320px)/(1600 - 320)));
+   line-height: 1.6
 }
 
-/* Mobiles: paragraph line-spacing and bottom margin */
-@media (max-width: 767px) {
-    .item-col-4 p { line-height: 1.4; margin-bottom: 14px }
+.container-footer .item-3 i { 
+   padding-right: 26px;
+} 
+
+.container-footer .item-3 p a {
+   text-decoration: none;
+   border-bottom-style: solid;
+   border-bottom-width: 2px;
+   padding-bottom:2px;
 }
 
-/* No vertical spacing under final item inside child columns */
-.item-col-4 *:last-child { margin-bottom: 0 }
+.container-footer .item-3 p a:link, 
+.container-footer .item-3 p a:visited  {
+   border-bottom-color: transparent;
+}
 
-/* Images inside child columns */
-.item-col-4 img { margin-bottom: 20px }
+.container-footer .item-3 p a:hover, 
+.container-footer .item-3 p a:active  {
+   border-bottom-color: #fff
+}
 
-
-/* ========= COLOURED BACKGROUNDS =========== */
-.bg-light { background-color: #f5f5f5 }
-.bg-dark  { background-color: rgba(4, 126, 163, 1) }
-
-
-/* Colours for sub-headings and paragraphs */
-
-.container-flexbox.bg-dark .item-col-4 * { color: #fff }
-.container-flexbox .item-col-4.bg-dark * { color: #fff }
-
-/* Visual layout guides - remove when finished */
-
-
+/* == End footer CSS == */
