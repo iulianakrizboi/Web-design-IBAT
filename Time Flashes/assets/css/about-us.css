@@ -571,22 +571,6 @@ a[href^=tel] { text-decoration: none; color: #fff }
 ****************************************************************** */
 
 
-/* ==== PAGE CONTAINER ==== */
-
-/* Desktop */
-@media all and (min-width:768px) {
-    .main-content { padding: 8% 20% 5% 20% }
-}
-/* Mobiles */
- @media all and (max-width:767px) {
-    .main-content { padding: 18% 7% 10% 7% }
-}
-/* Paragraphs in page container  */
-.main-content p {
-    font-weight: normal; line-height: 1.5; margin-bottom:14px; color: #0c0c0c;
-    font-size: calc(15px + (18 - 15) * ((100vw - 320px)/(1600 - 320)));
-}
-
 /* Animation from Animista starts here */
 
 .slide-in-top {
