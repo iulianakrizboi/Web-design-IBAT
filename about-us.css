@@ -44,7 +44,7 @@ img { width: 100%; height: auto; display: block; }
 
 /* Mobiles: inner padding for child columns  */
 @media (max-width: 767px) {
-    [class*="item-col-"].item-col-padding { padding: 3% 4% 4% 4% }
+    [class*="item-col-"].item-col-padding { padding: 2% 2% 2% 2% }
 }
 
 
@@ -66,7 +66,7 @@ img { width: 100%; height: auto; display: block; }
 	display: flex;
 	flex-direction: column;
   justify-content: center;
-  background-image: url("leica-copy.jpg");
+  background-color: rgb(128, 128, 128);
 	text-align: right;
 	background-position: center;
 	background-size: cover;
