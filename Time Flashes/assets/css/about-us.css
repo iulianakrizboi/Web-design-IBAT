@@ -23,7 +23,7 @@ img { width: 100%; height: auto; display: block; }
 	display: flex;
 	flex-direction: column;
   justify-content: center;
-  background-image: url('../../img/leica-copy.jpg');
+  background-image: url('C:/Users/iulia/OneDrive/Desktop/Time Flashes/img/leica-copy.jpg');
 	text-align: right;
 	background-position: center;
 	background-size: cover;
@@ -72,15 +72,20 @@ img { width: 100%; height: auto; display: block; }
 .hero-about-us h4, h5 {
  font-family: 'Montserrat', sans-serif;
  color: rgb(7, 7, 7);
- font-weight: 400;
- font-size: calc(12px + (12 - 4) * ((100vw - 320px) / (1600 - 320)));
+ font-weight: 300;
+ font-size: calc(10px + (10 - 4) * ((100vw - 320px) / (1600 - 320)));
+
+
 }
 
 .hero-about-us p {
   font-family: 'Montserrat', sans-serif;
   color: rgb(7, 7, 7);
   font-weight: 400;
+  position: -webkit-sticky;
   font-size: calc(12px + (12 - 4) * ((100vw - 320px) / (1600 - 320)));
+  text-align: left;
+  margin-left: 35px;
  }
 
 /* === Float text boxes === */
