@@ -1,6 +1,6 @@
 /*  ============= WEB BROWSER RESETS ============ */
 * { margin: 0; padding: 0; border: none; box-size: border-box }
-html { height: 100% }
+html { height: 100%; scroll-padding-top: 72px }
 body { min-height: 100%; max-width: 1600px; margin-left: auto; margin-right: auto }  
 img { width: 100%; height: auto; display: block; }
 
@@ -45,7 +45,7 @@ img { width: 100%; height: auto; display: block; }
 @media (max-width:767px) {
     .hero-about-us h1 { text-align: right; margin-right: 45px; margin-bottom: 20% }
     .hero-about-us h2 { text-align: right; margin-right: 25px }  
-	
+}
 	
 	/* === Float text boxes === */
 
@@ -187,6 +187,9 @@ img { width: 100%; height: auto; display: block; }
     left: 0;
     right: 0;
  }
+
+/* sticks menu to top of desktop and/or mobile screen */
+.menu-sticky { position: fixed; top: 0; left: 0; right: 0; }
  
 /* Height of desktop menu and mobile menu bar */
 .container-menu-desktop, .container-menu-bar-mobile { height:72px }
@@ -260,6 +263,7 @@ img { width: 100%; height: auto; display: block; }
 .container-menu-desktop ul li a {
     font-size: calc(15px + (19 - 15) * ((100vw - 320px)/(1600 - 320)));
     font-weight: bold;
+    font-family: 'Montserrat', sans-serif
     /* text-transform: uppercase */
 }
 
@@ -369,32 +373,32 @@ img { width: 100%; height: auto; display: block; }
     text-align: center; font-size: 15px; line-height: 1.4;
 }
 
-.flyout-menu div.fly-out-profile-box,
-.flyout-menu div.fly-out-social-icons {
+.flyout-menu.flyout-menu-is-open div.fly-out-profile-box,
+.flyout-menu.flyout-menu-is-open div.fly-out-social-icons {
     display:flex;
     flex-direction: row;
     justify-content: space-between;    
 }
 
-.flyout-menu div.fly-out-profile-box img,
-.flyout-menu div.fly-out-profile-box p { width: 47% }
+.flyout-menu.flyout-menu-is-open div.fly-out-profile-box img,
+.flyout-menu.flyout-menu-is-open div.fly-out-profile-box p { width: 47% }
 
-.flyout-menu div.fly-out-profile-box img {
+.flyout-menu.flyout-menu-is-open div.fly-out-profile-box img {
     display: block; border-radius: 100%;
     width: 104px; height: 104px; 
     border-style: solid;
     border-width: 2px
 }
 
-.flyout-menu div.fly-out-profile-box p {
+.flyout-menu.flyout-menu-is-open div.fly-out-profile-box p {
     text-align:left 
 }
 
-.flyout-menu div.fly-out-social-icons { 
+.flyout-menu.flyout-menu-is-open div.fly-out-social-icons { 
     margin-top:12px
 }
 
-.flyout-menu div.fly-out-social-icons a {
+.flyout-menu.flyout-menu-is-open div.fly-out-social-icons a {
     font-size: 26px;
     text-align: center 
 }
@@ -594,22 +598,6 @@ a[href^=tel] { text-decoration: none; color: #fff }
 ================END OF MENU STYLES TO COPY AND PASTE ===============
 ****************************************************************** */
 
-
-/* ==== PAGE CONTAINER ==== */
-
-/* Desktop */
-@media all and (min-width:768px) {
-    .main-content { padding: 8% 20% 5% 20% }
-}
-/* Mobiles */
- @media all and (max-width:767px) {
-    .main-content { padding: 18% 7% 10% 7% }
-}
-/* Paragraphs in page container  */
-.main-content p {
-    font-weight: normal; line-height: 1.5; margin-bottom:14px; color: #0c0c0c;
-    font-size: calc(15px + (18 - 15) * ((100vw - 320px)/(1600 - 320)));
-}
 
 /* Animation from Animista starts here */
 
