@@ -45,7 +45,29 @@ img { width: 100%; height: auto; display: block; }
 @media (max-width:767px) {
     .hero-about-us h1 { text-align: right; margin-right: 45px; margin-bottom: 20% }
     .hero-about-us h2 { text-align: right; margin-right: 25px }  
-    .hero-about-us p { margin-bottom: 40% }
+    .hero-about-us p { margin-bottom: 20% }
+	
+	
+	/* === Float text boxes === */
+
+.column1 {
+  float: left;
+  width: 35%;
+  margin-bottom: 20%;
+}
+.column2 {
+  margin-top: 30px;
+  float: right;
+  width: 40%;
+}
+
+/* Clear floats after the columns */
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 	
 }
 
