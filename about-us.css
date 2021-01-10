@@ -4,6 +4,49 @@ html { height: 100%; scroll-padding-top: 72px }
 body { min-height: 100%; max-width: 1600px; margin-left: auto; margin-right: auto }  
 img { width: 100%; height: auto; display: block; }
 
+/* ========== MAIN CONTENT CONTAINERS ========= */
+/* Desktops */
+@media (min-width:768px) { .container-block { padding: 4% 8%  } }
+
+/* Mobiles */
+@media (max-width:767px) { .container-block { padding: 11% 8% } }
+
+
+/* ========== FLEXBOX PARENT AND CHILD COLUMN ELEMENTS ========= */
+
+/* Flexbox parent container */
+.container-flexbox {
+    display: flex; 
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+
+}
+
+
+/* Desktops: flexbox child columns */
+@media (min-width: 768px) {
+    .item-col-2 { width: 47% }
+}
+
+/* Mobiles: flexbox child columns */
+@media (max-width: 767px) {
+    .item-col-2 { width: 100% }
+    /* Vertical spacing under first child column */
+    .item-col-2:first-child { margin-bottom: 32px }
+    /* No vertical spacing under last child column */
+    .item-col-2:last-child  { margin-bottom: 0 } 
+}
+
+/* Desktops: inner padding for child columns */
+@media (min-width: 768px) {
+    [class*="item-col-"].item-col-padding { padding: 1.8% 2% 2.2% 2% }
+}
+
+/* Mobiles: inner padding for child columns  */
+@media (max-width: 767px) {
+    [class*="item-col-"].item-col-padding { padding: 6.5% 7% 7% 7% }
+}
+
 
 /* === HERO BLOCK === */
 
@@ -43,31 +86,8 @@ img { width: 100%; height: auto; display: block; }
 
 /*  Mobiles - heading and sub-heading alignment */
 @media (max-width:767px) {
-    .hero-about-us h1 { text-align: right; margin-right: 45px; margin-bottom: 20% }
+    .hero-about-us h1 { text-align: right; margin-right: 45px }
     .hero-about-us h2 { text-align: right; margin-right: 25px }  
-
-	
-	/* === Float text boxes === */
-
-.column1 {
-  float: left;
-  width: 35%;
-  margin-bottom: 30%;
-}
-.column2 {
-  margin-top: 20%;
-  float: right;
-  width: 40%;
-}
-
-/* Clear floats after the columns */
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-	
 }
 
 
@@ -111,27 +131,6 @@ img { width: 100%; height: auto; display: block; }
   text-align: left;
   margin-left: 35px;
  }
-
-/* === Float text boxes === */
-
-.column1 {
-  float: left;
-  width: 35%;
-  margin-bottom: 50px;
-}
-.column2 {
-  margin-top: 60px;
-  float: right;
-  width: 40%;
-}
-
-/* Clear floats after the columns */
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 
 
 /* *****************************************************************
