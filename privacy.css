@@ -283,44 +283,44 @@ p, li { color: rgb(10, 10, 10); font-family:'Montserrat', sans-serif }
 }
 
 /* menu links */
-.menu-light ul li a:link,  .menu-light ul li a:visited { color:rgb(17, 15, 148) }
+.menu-light ul li a:link,  .menu-light ul li a:visited { color: rgba(4, 126, 163, 1) }
 .menu-light ul li a:hover, .menu-light ul li a:active  { color: rgb(250, 250, 250) }
 
 /* cta button */
 .menu-light ul li a.btn-cta:link, 
 .menu-light ul li a.btn-cta:visited {
     background-color: transparent;
-    color:rgb(17, 15, 148);
-    border-color: rgb(17, 15, 148)
+    color: rgba(4, 126, 163, 1);
+    border-color: rgba(4, 126, 163, 1)
 }
 
 .menu-light ul li a.btn-cta:hover,
 .menu-light ul li a.btn-cta:active {
-    background-color:rgb(17, 15, 148);
+    background-color: rgba(4, 126, 163, 1);
     color: rgb(255, 255, 255);
-    border-color:rgb(17, 15, 148)
+    border-color:rgba(4, 126, 163, 1)
 }
 
 /* on mobiles only */
-.menu-light.flyout-menu hr { background-color: rgba(4, 126, 163, 1); border-color: rgb(17, 15, 148) } 
+.menu-light.flyout-menu hr { background-color: rgba(4, 126, 163, 1); border-color: rgba(4, 126, 163, 1) } 
 
 .menu-light.flyout-menu h4,
 .menu-light.flyout-menu h5,
 .menu-light.flyout-menu h5 a, 
-.menu-light.flyout-menu p { color: rgb(17, 15, 148) } 
+.menu-light.flyout-menu p { color: rgba(4, 126, 163, 1) } 
 
 /* colour of hamburger icon bars */
 .menu-light .item-icon .bar1, 
 .menu-light .item-icon .bar2, 
-.menu-light .item-icon .bar3 { background-color: rgb(17, 15, 148) }	
+.menu-light .item-icon .bar3 { background-color: rgba(4, 126, 163, 1) }	
 
 /* phone number link */
-a[href^=tel] { text-decoration: none; color: rgb(17, 15, 148) }
+a[href^=tel] { text-decoration: none; color: rgba(4, 126, 163, 1) }
 
 /* email link */
 .menu-light.flyout-menu h5 a:link, 
 .menu-light.flyout-menu h5 a:visited {
-    border-bottom-color: rgb(17, 15, 148);
+    border-bottom-color: rgba(4, 126, 163, 1);
 }
 
 .menu-light.flyout-menu h5 a:hover, 
@@ -329,10 +329,10 @@ a[href^=tel] { text-decoration: none; color: rgb(17, 15, 148) }
 }
 
 /* profile image border colour */
-.menu-light.flyout-menu div.fly-out-profile-box img { border-color: rgb(17, 15, 148) }
+.menu-light.flyout-menu div.fly-out-profile-box img { border-color: rgba(4, 126, 163, 1) }
 
 /* contact icons */
-.menu-light.flyout-menu .fly-out-social-icons a i { color:rgb(17, 15, 148) }
+.menu-light.flyout-menu .fly-out-social-icons a i { color:rgba(4, 126, 163, 1) }
 
 /* === End light background menu === */
 
@@ -342,18 +342,18 @@ a[href^=tel] { text-decoration: none; color: rgb(17, 15, 148) }
 
 /* background colour */
 .menu-dark { 
-	background-color: rgb(17, 15, 148); 
+	background-color: rgba(4, 126, 163, 1); 
 	transition: all .5s ease-in-out
 }
 
 /* menu links */
 .menu-dark ul li a:link,  .menu-dark ul li a:visited { color: rgb(0, 0, 0) }
-.menu-dark ul li a:hover, .menu-dark ul li a:active  { color: rgb(17, 15, 148) }
+.menu-dark ul li a:hover, .menu-dark ul li a:active  { color: rgba(4, 126, 163, 1) }
 
 /* cta button */
 .menu-dark ul li a.btn-cta:link,
 .menu-dark ul li a.btn-cta:visited { 
-    background-color: rgb(17, 15, 148);
+    background-color: rgba(4, 126, 163, 1)0;
     color: rgb(255, 255, 255);
     border-color:rgb(255, 255, 255)
 }
@@ -361,7 +361,7 @@ a[href^=tel] { text-decoration: none; color: rgb(17, 15, 148) }
 .menu-dark ul li a.btn-cta:hover,
 .menu-dark ul li a.btn-cta:active { 
     background-color: rgb(255, 255, 255);
-    color: rgb(17, 15, 148);
+    color: rgba(4, 126, 163, 1);
     border-color:rgb(255, 255, 255)
 }
 
@@ -393,7 +393,7 @@ a[href^=tel] { text-decoration: none; color: #fff }
 }
 
 /* profile image border colour */
-.menu-dark.flyout-menu div.fly-out-profile-box img { border-color:rgb(17, 15, 148) }
+.menu-dark.flyout-menu div.fly-out-profile-box img { border-color: rgba(4, 126, 163, 1) }
 
 /* contact icons */
 .menu-dark.flyout-menu .fly-out-social-icons a i { color:rgb(255, 255, 255) }
@@ -412,21 +412,21 @@ a[href^=tel] { text-decoration: none; color: #fff }
 
 /* menu links */
 .menu-transparent ul li a:link,  .menu-transparent ul li a:visited { color: rgb(0, 0, 0) }
-.menu-transparent ul li a:hover, .menu-transparent ul li a:active  { color: rgb(17, 15, 148) }
+.menu-transparent ul li a:hover, .menu-transparent ul li a:active  { color: rgba(4, 126, 163, 1) }
 
 /* cta button */
 .menu-transparent ul li a.btn-cta:link,
 .menu-transparent ul li a.btn-cta:visited { 
-    background-color: rgb(17, 15, 148);
+    background-color: rgba(4, 126, 163, 1);
     color: rgb(255, 255, 255);
-    border-color: rgb(17, 15, 148);
+    border-color:rgba(4, 126, 163, 1);
 }
 
 .menu-transparent ul li a.btn-cta:hover,
 .menu-transparent ul li a.btn-cta:active { 
     background-color: #fff;
-    color: rgb(17, 15, 148);
-    border-color: rgb(17, 15, 148)
+    color: rgba(4, 126, 163, 1);
+    border-color: rgba(4, 126, 163, 1)
 }
 
 /* on mobiles only - various content */
@@ -453,16 +453,21 @@ a[href^=tel] { text-decoration: none; color: #fff }
 
 .menu-transparent.flyout-menu h5 a:hover, 
 .menu-transparent.flyout-menu h5 a:active {
-    border-bottom-color: rgb(17, 15, 148);
+    border-bottom-color: rgba(4, 126, 163, 1);
 }
 
 /* profile image border colour */
-.menu-transparent.flyout-menu div.fly-out-profile-box img { border-color: rgb(17, 15, 148) }
+.menu-transparent.flyout-menu div.fly-out-profile-box img { border-color: rgba(4, 126, 163, 1) }
 
 /* contact icons */
 .menu-transparent.flyout-menu .fly-out-social-icons a i { color:#fff }
 
 /* === End transparent background menu === */
+
+
+/* *****************************************************************
+================END OF MENU STYLES TO COPY AND PASTE ===============
+****************************************************************** */
 
 
 /* === HERO BLOCK === */
