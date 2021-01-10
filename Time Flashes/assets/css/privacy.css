@@ -5,7 +5,7 @@ body { min-height: 100%; max-width: 1800px; margin-left: auto; margin-right: aut
 img { width: 100%; height: auto; display: block; }
 
 /* Default font and colours */
-body { font-family: 'Open Sans', sans-serif; background-color: rgb(17, 15, 148) }
+body { font-family: 'Open Sans', sans-serif; background-color: rgb(128, 128, 128) }
 h1, h2, h3 { color: rgb(17, 15, 148); font-family:'Open Sans', sans-serif }
 p, li { color: rgb(10, 10, 10); font-family:'Montserrat', sans-serif }
 
