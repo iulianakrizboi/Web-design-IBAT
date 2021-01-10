@@ -1,25 +1,34 @@
 /*  ============= WEB BROWSER RESETS ============ */
+
 * { margin: 0; padding: 0; border: none }
 html { height: 100% }
 body { min-height: 100%; max-width: 1600px; margin-left: auto; margin-right: auto }  
 img { width: 100%; height: auto; display: block; }
 
-/* ---  Menu styles --- */
+
+/* *****************************************************************
+====================== MENU STYLES TO COPY AND PASTE ===============
+********************************************************************* */
+
+/* Begin menu styles */
+
+.unhide-content-under-menu { padding-top: 72px }
 
 /* === ALL SCREEN SIZES ====== */
 
 /* Positions all menus in front of page content */
 
-#main, 
+#main,
+.container-menu-desktop, 
 .container-menu-bar-mobile, 
 .flyout-menu { z-index: 999; font-family: 'Montserrat', sans-serif; }
-#main, .container-menu-bar-mobile { width:100%; font-family: 'Montserrat', sans-serif; }
+.container-menu-desktop, .container-menu-bar-mobile { width:100%; font-family: 'Montserrat', sans-serif; }
 
 /* on mobiles - hide desktop menu */
 @media all and (max-width:767px) { 
-  .container-menu-desktop.menu-transparent,
-  .container-menu-desktop.menu-light,
-  .container-menu-desktop.menu-dark { display: none }
+    .container-menu-desktop.menu-transparent,
+    .container-menu-desktop.menu-light,
+    .container-menu-desktop.menu-dark { display: none }
 }
   
   .sidebar {
@@ -96,18 +105,20 @@ img { width: 100%; height: auto; display: block; }
     .sidebar a {font-size: 18px;}
   }
 
-  /* End of menu */
+  /* End of desktop menu */
+
+  
 
 /* ==== Hero block general properties ==== */
 
 /* Desktop - hero block height and inside spacing */
 @media (min-width:768px) {
-    .hero-image { padding: 0 20%; height: 740px }
+    .hero-image { height: 740px }
 }
 
 /* Mobiles - hero block eight and inside spacing */
  @media (max-width:767px) {
-    .hero-image { padding: 0 10%; height: 480px }
+    .hero-image { height: 480px }
 }
 
 
@@ -118,7 +129,7 @@ img { width: 100%; height: auto; display: block; }
     /* Vertical spacing of block content */
     justify-content: center;
     /* Background color */
-      background-image: url('C:/Users/iulia/OneDrive/Desktop/Time Flashes/img/cameras.jpg'); 
+      background-image: url('../../img/cameras.jpg'); 
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
@@ -130,12 +141,12 @@ img { width: 100%; height: auto; display: block; }
 
 /* Desktops - heading and sub-heading alignment */
 @media (min-width:768px) {
-    .hero-image h1, .hero-image h2 { text-align: center }
+    .hero-image h1 { text-align: center }
 }
 
 /*  Mobiles - heading and sub-heading alignment */
 @media (max-width:767px) {
-    .hero-image h1, .hero-image h2 { text-align: center }
+    .hero-image h1 { text-align: center }
 }
 
 .hero-image h1 { 
@@ -153,21 +164,6 @@ img { width: 100%; height: auto; display: block; }
     font-size: calc(90px + (112 - 60) * ((100vw - 320px) / (1600 - 320)));
 }
 
-.hero-image h2 { 
-    /* Font styles */
-    font-family: 'Montserrat', sans-serif;
-    color: rgb(221, 112, 112);
-    text-shadow: 2px 2px 5px rgb(223, 214, 214);
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    position: absolute;
-    top: 51.5%;
-    left: 50%;
-    line-height: 1.2;
-    font-size: calc(24px + (54 - 24) * ((100vw - 320px) / (1600 - 320)));
-    transform: translate(-50%, -50%);
-}
 
 /* Desktop - Space beneath main heading  */
 @media (min-width:768px) { .hero-image h1 { margin-bottom: 10% } }
@@ -178,11 +174,11 @@ img { width: 100%; height: auto; display: block; }
 /*======= Buttons ======= */
 
 /* Button container */
-.hero-image .container-btn { display: flex; margin-right: 5% }
+.hero-image .container-btn { display: flex }
 
 /* Desktop - button container */
 @media (min-width:768px) {
-    .hero-image .container-btn {
+    .hero-image .container-btn {                    
         /* Spacing above button container */
         margin-top: 10%;
         /* Buttons postioned side-by-side */
@@ -190,7 +186,7 @@ img { width: 100%; height: auto; display: block; }
     }
 
     /*Buttons half width */
-    .hero-image .container-btn .item-col-2 { width: 50% }
+    .hero-image .container-btn .item-col-2 { width: 47% }
 
    /* Button alignment within their containers */
     .hero-image .container-btn .item-col-2:first-child { text-align: right }
@@ -218,10 +214,10 @@ img { width: 100%; height: auto; display: block; }
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;    
     text-decoration: none;
-    padding: 20px 13px 20px 20px;
+    padding: 20px 20px 20px 30px;
     text-transform: uppercase;
     display: inline-block; 
-    font-size: calc(16px + (19 - 16) * ((100vw - 320px) / (1600 - 320))); 
+    font-size: calc(14px + (19 - 14) * ((100vw - 320px) / (1600 - 320))); 
     flex-wrap: wrap;
 }
 
@@ -263,10 +259,29 @@ img { width: 100%; height: auto; display: block; }
 
 /* Button shapes */
 a.btn-soft { border-radius: 15px }
-a.btn-rounded { border-radius: 30px }
+a.btn-rounded { border-radius: 40px }
 
 /* Icon spacing inside buttons */
 a.btn-primary i, a.btn-secondary i { margin-right: 12px }
+
+
+/*======= Buttons ======= */
+
+/* Desktop */
+@media (min-width:768px) {
+  .hero-image .container-btn .item-col-2 { width: 47% }
+  .hero-image .container-btn a.btn-primary,
+  .hero-image .container-btn a.btn-secondary { padding: 20px 20px 20px 30px }
+  a.btn-rounded { border-radius: 40px }
+}
+
+/* Mobiles */
+@media (max-width:767px) {
+  .hero-image .container-btn { margin-top: 70% }
+  .hero-image .container-btn .item-col-2:last-child { margin-top: 10% }
+  .hero-image .container-btn a.btn-primary,
+  .hero-image .container-btn a.btn-secondary { padding: 14px 20px 14px 20px }
+}
 
 
 
