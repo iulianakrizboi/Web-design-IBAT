@@ -30,7 +30,7 @@ img { width: 100%; height: auto; display: block; }
 
 /* Mobiles: flexbox child columns */
 @media (max-width: 767px) {
-    .item-col-2 { width: 100% }
+    .item-col-2 { width: 50% }
     /* Vertical spacing under first child column */
     .item-col-2:first-child { margin-bottom: 32px }
     /* No vertical spacing under last child column */
