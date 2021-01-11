@@ -6,10 +6,10 @@ img { width: 100%; height: auto; display: block; }
 
 /* ========== MAIN CONTENT CONTAINERS ========= */
 /* Desktops */
-@media (min-width:768px) { .container-block { padding: 1% 1.8% 2% 1% } }
+@media (min-width:768px) { .container-block { padding: 4% 8% } }
 
 /* Mobiles */
-@media (max-width:767px) { .container-block { padding: 2% 1% 2% 1% } }
+@media (max-width:767px) { .container-block { padding: 11% 8% } }
 
 
 /* ========== FLEXBOX PARENT AND CHILD COLUMN ELEMENTS ========= */
@@ -25,7 +25,7 @@ img { width: 100%; height: auto; display: block; }
 
 /* Desktops: flexbox child columns */
 @media (min-width: 768px) {
-    .item-col-2 { width: 39% }
+    .item-col-2 { width: 47% }
 }
 
 /* Mobiles: flexbox child columns */
@@ -39,12 +39,12 @@ img { width: 100%; height: auto; display: block; }
 
 /* Desktops: inner padding for child columns */
 @media (min-width: 768px) {
-    [class*="item-col-"].item-col-padding { padding: 1.8% 2% 2.2% 2% }
+    [class*="item-col-"].item-col-padding { padding: 2% 4% 4% 2% }
 }
 
 /* Mobiles: inner padding for child columns  */
 @media (max-width: 767px) {
-    [class*="item-col-"].item-col-padding { padding: 2% 2% 2% 2% }
+    [class*="item-col-"].item-col-padding { padding: 6.5% 7% 7% 7% }
 }
 
 
@@ -66,7 +66,7 @@ img { width: 100%; height: auto; display: block; }
 	display: flex;
 	flex-direction: column;
   justify-content: center;
-  background-color: rgb(128, 128, 128);
+  background-image: url("white-flower.jpg");
 	text-align: right;
 	background-position: center;
 	background-size: cover;
@@ -80,14 +80,14 @@ img { width: 100%; height: auto; display: block; }
 
 /* Desktops - heading and sub-heading alignment */
 @media (min-width:768px) {
-    .hero-about-us h1 { text-align: right; margin-right: 75px }
-    .hero-about-us h2 { text-align: right; margin-right: 55px; padding-bottom: 30px }
+    .hero-about-us h1 { text-align: center }
+    .hero-about-us h2 { text-align: center; padding-bottom: 30px }
 }
 
 /*  Mobiles - heading and sub-heading alignment */
 @media (max-width:767px) {
-    .hero-about-us h1 { text-align: right; margin-right: 45px }
-    .hero-about-us h2 { text-align: right; margin-right: 25px }  
+    .hero-about-us h1 { text-align: center }
+    .hero-about-us h2 { text-align: center; padding-bottom: 25px }  
 }
 
 
