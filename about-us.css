@@ -66,7 +66,7 @@ img { width: 100%; height: auto; display: block; }
 	display: flex;
 	flex-direction: column;
   justify-content: center;
-  background-image: url('../../img/white-flower.jpg');
+  background-image: url("white-flower.jpg");
 	background-position: center;
 	background-size: cover;
   background-repeat: no-repeat;
