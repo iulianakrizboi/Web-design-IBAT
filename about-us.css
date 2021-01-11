@@ -107,7 +107,7 @@ img { width: 100%; height: auto; display: block; }
   color: rgb(7, 7, 7);
   font-weight: 400;
   position: sticky;
-  font-size: calc(14px + (14 - 4) * ((100vw - 320px) / (1600 - 320)));
+  font-size: calc(12px + (12 - 4) * ((100vw - 320px) / (1600 - 320)));
   
 }
 
@@ -115,7 +115,7 @@ img { width: 100%; height: auto; display: block; }
  font-family: 'Montserrat', sans-serif;
  color: rgb(7, 7, 7);
  font-weight: 300;
- font-size: calc(10px + (10 - 4) * ((100vw - 320px) / (1600 - 320)));
+ font-size: calc(8px + (8 - 4) * ((100vw - 320px) / (1600 - 320)));
 
 
 }
