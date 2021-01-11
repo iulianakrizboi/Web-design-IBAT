@@ -113,9 +113,9 @@ p, li { color: rgb(10, 10, 10); font-family:'Montserrat', sans-serif }
    home page link (with website logo) at left and ul links at right are its two children */
 .container-menu-desktop {
 	display: flex;
-    justify-content: space-between;
-    padding: 0 6% 0 6%;
-    width: 100%;
+        justify-content: space-between;
+        padding: 0 6% 0 6%;
+        width: 100%;
 }
 
 /* menu links and cta button aligned horizontally */
@@ -151,8 +151,8 @@ p, li { color: rgb(10, 10, 10); font-family:'Montserrat', sans-serif }
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-    width: 100%;
-    padding: 0 6% 0 6%;
+        width: 100%;
+        padding: 0 6% 0 6%;
 }
 
 /* three bars hozizontal in hamburger icon */
