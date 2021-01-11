@@ -59,7 +59,7 @@ img { width: 100%; height: auto; display: block; }
 
 /* Mobiles - hero block eight and inside spacing */
  @media (max-width:767px) {
-    .hero-about-us { height: 480px }
+    .hero-about-us { height: 100% }
 }
 
 .hero-about-us {
