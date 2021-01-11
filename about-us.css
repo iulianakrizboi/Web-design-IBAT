@@ -32,7 +32,7 @@ img { width: 100%; height: auto; display: block; }
 @media (max-width: 767px) {
     .item-col-2 { width: 100% }
     /* Vertical spacing under first child column */
-    .item-col-2:first-child { margin-bottom: 32px }
+    .item-col-2:first-child { margin-bottom: 20px }
     /* No vertical spacing under last child column */
     .item-col-2:last-child  { margin-bottom: 0 } 
 }
@@ -85,9 +85,8 @@ img { width: 100%; height: auto; display: block; }
 
 /*  Mobiles - heading and sub-heading alignment */
 @media (max-width:767px) {
-    .hero-about-us h1 { text-align: right; margin-right: 45px }
-    .hero-about-us h2 { text-align: right; margin-right: 25px }
-    .hero-about-us p { margin-bottom: 20% }
+    .hero-about-us h1 { text-align: center; padding-top: 20px }
+    .hero-about-us h2 { text-align: center; padding-bottom: 20px }
 }
 
 
