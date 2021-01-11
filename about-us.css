@@ -125,7 +125,7 @@ img { width: 100%; height: auto; display: block; }
   color: rgb(7, 7, 7);
   font-weight: 400;
   position: -webkit-sticky;
-  font-size: calc(16px + (18 - 16) * ((100vw - 320px) / (1600 - 320)));
+  font-size: calc(12px + (18 - 12) * ((100vw - 320px) / (1600 - 320)));
   text-align: left;
   margin-left: 35px;
  }
