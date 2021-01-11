@@ -118,7 +118,7 @@ img { width: 100%; height: auto; display: block; }
 
 /* Mobiles - hero block height and inside spacing */
  @media (max-width:767px) {
-    .hero-image { height: 480px }
+     .hero-image { height: 740px }
 }
 
 
@@ -129,7 +129,7 @@ img { width: 100%; height: auto; display: block; }
     /* Vertical spacing of block content */
     justify-content: center;
     /* Background color */
-      background-image: url('../../img/cameras.jpg'); 
+      background-image: url("cameras.jpg"); 
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
@@ -146,7 +146,7 @@ img { width: 100%; height: auto; display: block; }
 
 /*  Mobiles - heading and sub-heading alignment */
 @media (max-width:767px) {
-    .hero-image h1 { text-align: center }
+    .hero-image h1 { text-align: center; margin-top: 7% }
 }
 
 .hero-image h1 { 
@@ -327,3 +327,8 @@ opacity: 0.6;
 opacity: 1;
 }
 }
+
+
+
+
+
